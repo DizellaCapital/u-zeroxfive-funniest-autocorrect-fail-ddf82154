@@ -39,7 +39,7 @@ def main():
     with open(path, "r", encoding="utf-8", newline="") as f:
         written = f.read()
     if written != LINE:
-        print("read-back mismatch", file=sys.stderr)
+        print("read-back mismatch: entry.txt differs from LINE", file=sys.stderr)
         return 1
     return 0
 
